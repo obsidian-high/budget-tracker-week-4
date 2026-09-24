@@ -11,7 +11,7 @@
 
     <div class="dashboard">
 
-        <!-- Sidebar -->
+        <!-- Sidebar Navigation -->
         <aside class="sidebar">
 
             <div class="brand">
@@ -19,36 +19,38 @@
                 <p>Smart money management</p>
             </div>
 
-            <nav class="navigation">
+            <nav class="navigation" aria-label="Main navigation">
+
                 <a href="#" class="nav-item active">
-                    <span>📊</span>
+                    <span aria-hidden="true">📊</span>
                     Dashboard
                 </a>
 
                 <a href="#" class="nav-item">
-                    <span>💳</span>
+                    <span aria-hidden="true">💳</span>
                     Expenses
                 </a>
 
                 <a href="#" class="nav-item">
-                    <span>💰</span>
+                    <span aria-hidden="true">💰</span>
                     Income
                 </a>
 
                 <a href="#" class="nav-item">
-                    <span>🎯</span>
+                    <span aria-hidden="true">🎯</span>
                     Budgets
                 </a>
 
                 <a href="#" class="nav-item">
-                    <span>📈</span>
+                    <span aria-hidden="true">📈</span>
                     Reports
                 </a>
 
                 <a href="#" class="nav-item">
-                    <span>⚙️</span>
+                    <span aria-hidden="true">⚙️</span>
                     Settings
                 </a>
+
             </nav>
 
             <div class="sidebar-footer">
@@ -58,10 +60,10 @@
         </aside>
 
 
-        <!-- Main Content -->
+        <!-- Main Dashboard -->
         <main class="main-content">
 
-            <!-- Header -->
+            <!-- Dashboard Header -->
             <header class="dashboard-header">
 
                 <div class="header-text">
@@ -70,26 +72,28 @@
                 </div>
 
                 <div class="header-actions">
+
                     <div class="balance">
                         <span>Total Balance</span>
                         <strong>KSh 84,500</strong>
                     </div>
 
-                    <div class="profile">
-                        <span>HA</span>
+                    <div class="profile" aria-label="User profile">
+                        HA
                     </div>
+
                 </div>
 
             </header>
 
 
-            <!-- Dashboard Cards -->
-            <section class="dashboard-grid">
+            <!-- Financial Category Cards -->
+            <section class="dashboard-grid" aria-label="Financial categories">
 
                 <!-- Food -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon food-icon">🍔</div>
+                        <div class="card-icon food-icon" aria-hidden="true">🍔</div>
                         <span class="card-status">32%</span>
                     </div>
 
@@ -102,9 +106,9 @@
 
 
                 <!-- Transport -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon transport-icon">🚗</div>
+                        <div class="card-icon transport-icon" aria-hidden="true">🚗</div>
                         <span class="card-status">18%</span>
                     </div>
 
@@ -117,9 +121,9 @@
 
 
                 <!-- Rent -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon rent-icon">🏠</div>
+                        <div class="card-icon rent-icon" aria-hidden="true">🏠</div>
                         <span class="card-status">45%</span>
                     </div>
 
@@ -132,9 +136,9 @@
 
 
                 <!-- Entertainment -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon entertainment-icon">🎮</div>
+                        <div class="card-icon entertainment-icon" aria-hidden="true">🎮</div>
                         <span class="card-status">12%</span>
                     </div>
 
@@ -147,9 +151,9 @@
 
 
                 <!-- Savings -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon savings-icon">💰</div>
+                        <div class="card-icon savings-icon" aria-hidden="true">💰</div>
                         <span class="card-status">28%</span>
                     </div>
 
@@ -162,9 +166,9 @@
 
 
                 <!-- Utilities -->
-                <article class="category-card">
+                <article class="category-card" tabindex="0">
                     <div class="card-top">
-                        <div class="card-icon utilities-icon">💡</div>
+                        <div class="card-icon utilities-icon" aria-hidden="true">💡</div>
                         <span class="card-status">15%</span>
                     </div>
 
@@ -178,16 +182,18 @@
             </section>
 
 
-            <!-- Recent Activity -->
+            <!-- Monthly Summary -->
             <section class="summary-card">
 
                 <div class="summary-header">
+
                     <div>
                         <p>Overview</p>
                         <h3>Monthly Summary</h3>
                     </div>
 
                     <span class="summary-date">September 2026</span>
+
                 </div>
 
                 <div class="summary-details">
